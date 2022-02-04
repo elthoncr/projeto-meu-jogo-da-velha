@@ -1,0 +1,17 @@
+body {
+  margin: 0 auto;
+}
+
+#name-game {
+  font-size: 62px;
+}
+
+.container {
+  display: flex;
+  background-color: blue;
+  width: 400px;
+}
+
+#campo {
+  width: 40px;
+}
