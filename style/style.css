@@ -1,17 +1,63 @@
-body {
+/* Código CSS */
+
+/* Body */
+* {
   margin: 0 auto;
 }
 
-#name-game {
-  font-size: 62px;
+/* Heading */
+h1 {
+  color: orangered;
+  font-size: 45px;
 }
 
-.container {
+/* Grid of boxes / Grade de caixas. */
+#grid {
   display: flex;
-  background-color: blue;
-  width: 400px;
+  flex-wrap: wrap;
+  width: 20rem;
+  gap: 5px;
 }
 
-#campo {
-  width: 40px;
+/* 3*3 Grid / Grade */
+.gridBox {
+  width: 80px;
+  height: 52px;
+  margin: auto;
+  border: 1px solid gray;
+  border-radius: 6px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Reset Button / Botão de Reiniciar Jogo */
+#but {
+  box-sizing: border-box;
+  width: 150px;
+  height: 40px;
+  border: 1px solid dodgerblue;
+  margin: auto;
+  border-radius: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Conteudo Principal */
+main {
+  text-align: center;
+}
+
+/* Game Instruction Text / Texto com Instruções do Jogo */
+#instruction-game {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: dodgerblue;
+  font-size: 17px;
+  padding-top: 5rem;
+}
+
+#grid {
+  padding: 5rem;
 }

@@ -1,25 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
   <head>
     <meta charset="UTF-8" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS file Included / CSS inclusão do Arquivo -->
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+    <!-- JavaScript file included / JavaScript inclusão do Arquivo -->
     <title>Jogo da Velha</title>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   </head>
   <body>
-    <h1 id="name-game">Jogo da Velha</h1>
-    <div class="container">
-      <div id="campo0"></div>
-      <div id="campo1"></div>
-      <div id="campo2"></div>
-      <div id="campo3"></div>
-      <div id="campo4"></div>
-      <div id="campo5"></div>
-      <div id="campo6"></div>
-      <div id="campo7"></div>
-      <div id="campo8"></div>
-    </div>
+    <main>
+      <h1>JOGO DA VELHA</h1>
+      <div id="instruction-game">
+        <p>O jogo inicia quando toca na casa do tabuleiro.</p>
+        <p>Primeiro jogador é o <strong>Player X</strong></p>
+        <p>E o</p>
+        <p>Segundo jogador é o <strong>Player O</strong></p>
+      </div>
+
+      <!-- Grid of boxes / Grade de caixas. -->
+      <div id="grid">
+        <input
+          type="text"
+          class="gridBox"
+          id="b1"
+          onclick="jogar(b1);"
+          readonly
+        />
+
+        <input type="text" class="gridBox" id="b2" readonly />
+
+        <input type="text" class="gridBox" id="b3" readonly />
+
+        <input type="text" class="gridBox" id="b4" readonly />
+
+        <input type="text" class="gridBox" id="b5" readonly />
+
+        <input type="text" class="gridBox" id="b6" readonly />
+
+        <input type="text" class="gridBox" id="b7" readonly />
+
+        <input type="text" class="gridBox" id="b8" readonly />
+
+        <input type="text" class="gridBox" id="b9" readonly />
+      </div>
+
+      <button id="but">REINICIAR</button>
+
+      <p id="print"></p>
+    </main>
   </body>
 </html>
