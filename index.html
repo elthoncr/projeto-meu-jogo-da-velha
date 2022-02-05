@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="style/style.css" />
 
     <!-- JavaScript file included / JavaScript inclusão do Arquivo -->
+    <script src="js/scripts.js"></script>
     <title>Jogo da Velha</title>
   </head>
   <body>
@@ -23,19 +24,39 @@
         <p>Segundo jogador é o <strong>Player O</strong></p>
       </div>
 
+      <!--<script playgame()></script>-->
+
       <!-- Grid of boxes / Grade de caixas. -->
       <div id="grid">
+        <!-- Implementation of button 1 / Implementação do Botão 1 -->
+        <!-- Quando o jogador clicar no input botão 1 - 
+          Sera acionado a função playGame() e jogar() -->
         <input
           type="text"
           class="gridBox"
-          id="b1"
-          onclick="jogar(b1);"
+          id="botao1"
+          onclick="playGame(); jogar('botao1');"
+          placeholder=""
           readonly
         />
 
-        <input type="text" class="gridBox" id="b2" readonly />
+        <!-- Implementation of button 2 / Implementação do Botão 2 -->
+        <input
+          type="text"
+          class="gridBox"
+          id="botao2"
+          onclick="playGame(); jogar('botao2');"
+          readonly
+        />
 
-        <input type="text" class="gridBox" id="b3" readonly />
+        <!-- Implementation of button 3 / Implementação do Botão 3 -->
+        <input
+          type="text"
+          class="gridBox"
+          id="botao3"
+          onclick="playGame(); jogar('botao3');"
+          readonly
+        />
 
         <input type="text" class="gridBox" id="b4" readonly />
 
@@ -50,7 +71,7 @@
         <input type="text" class="gridBox" id="b9" readonly />
       </div>
 
-      <button id="but">REINICIAR</button>
+      <button id="but" onclick="restartGame()">REINICIAR</button>
 
       <p id="print"></p>
     </main>
